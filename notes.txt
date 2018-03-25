@@ -1,0 +1,66 @@
+Angular Session:
+- Why from AngularJS to Angular2? / SPA / JS Framework / Moduler design
+- Create a sample Hello World with angular-cli
+- Angular how is it Bootstraped? / How angular runs / NgModules / Components ?
+	- main.ts entry point
+	- platform browser dynamic bootstrapping modules - JIT compilation / AOT compilation
+
+    Refs:
+    platform browser dynamic - https://stackoverflow.com/a/40338777/1778834
+    angular compiler JIT vs AOT - https://www.youtube.com/watch?v=kW9cJsvcsGo
+	
+	- create a module
+		- three basic properties:
+			- declaration; only --> compnoents, directives, and pipes to be declared; NOT to declare --> services, modules, helper classes
+			- imports --> BrowserModule, to run angular in the browser, in-turn import ComomnsModule for ngFor, ngIf directives
+			- bootstrap --> Single root component to launch the application, multiple components can also be bootstrapped
+	- References NgModules:
+		- https://angular.io/docs/ts/latest/guide/appmodule.html
+		- https://angular.io/docs/ts/latest/cookbook/ngmodule-faq.html
+		- https://toddmotto.com/bootstrap-angular-2-hello-world
+		- https://plnkr.co/edit/KQF2M8mA0L0trMrWgeLT?p=info - Sample Hello World
+	
+	- create a component
+		- simplest ts and HTML combination. Mostly while developing you will spend your time here :) 
+		- uses @Component annotation, property selector, templateUrl, providers
+		- how a component gets bootstrapped? --> selectors
+		- use a unknown selector and angular throws error scenario
+		- Simple ngIf explanations and that works coz BrowserModules --> CommonsModules
+		- ngModel example doesn't work --> coz import FormsModule, [ngModel] single binding, [(ngModel)] two way explanation
+		- simple click, blur example, explain history bindings have been defined (), []
+		- passing values between components
+			- @Input
+			- setter 
+			- ngOnChanges()
+			- @Output
+			- #id 
+			- @ViewChild
+			- via service (Rx-Subject)
+		- component life cycle hooks
+
+	- References Components:
+		- https://angular.io/docs/ts/latest/api/core/index/Component-decorator.html
+		- https://angular.io/docs/ts/latest/cookbook/component-communication.html
+		- http://blog.angular-university.io/introduction-to-angular-2-fundamentals-of-components-events-properties-and-actions/ <-- Learn Fully
+		
+
+- Creating directive and passing data between them
+- Handling events between components - Covered as part of Component
+
+- Dependency Injections / Services
+- Angular Router / SPA / child routing
+- Webpack and how build is done. / what goes where? / little bit of linting
+- What is TypeScript?/ typings.ts / typescript to JS conversions
+- Node and NPM / general / background including <script> tags
+- Zones and its purpose
+- Compilers in Angualr
+- Debugging Angular - Augry
+- Pure Rxjs NOT within Angular / effects / observables / With Angualar / How its working in our application
+- Rxjs / Store / store routing / state rehydration
+	https://www.youtube.com/watch?v=pjwVq8B-ZAw
+	https://github.com/JavascriptMick/ng2-state-talk
+	Redux:
+	 https://www.youtube.com/watch?v=bEkPEnudm7s
+
+
+- 
