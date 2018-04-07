@@ -1,10 +1,16 @@
-<h1>Hellow Wordl!</h1>
+<h1>Hellow Wordl 2</h1>
 
 <input type="text" [(ngModel)]="twoWayBinding"/>
 
-{{twoWayBinding}}
+{{twoWayBinding | myCitPipe}}
 
+<br/>
+<br/>
+{{variable1 | myCitPipe}}<br/><br/>
+{{variable2 | myCitPipe}}
 
+<br/>
+<br/>
 <button (click)="newFunction123('123')">98798798</button>
 
 <div *ngIf="canDisplay">
