@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: '#cit-app',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  // @ViewChild('inputValue')
+  // private inputValue: ElementRef;
   twoWayBinding = 'HELLO ';
   title = 'app';
   canDisplay = false;
@@ -25,4 +28,8 @@ export class AppComponent {
     }
   }
 
+  // changeMyColor() {
+  //   const elem = document.getElementsByClassName('myInput')[0];
+  //   elem.style.backgroundColor = 'red';
+  // }
 }
